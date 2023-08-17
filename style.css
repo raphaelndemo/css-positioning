@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #333;
+}
+header img{
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+    clear: both;   
+
+}
+header h{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 10px;
+    margin: 20px 1%;
+    font-size: 40px;
+    color: white;
+}
+nav{
+    white-space: nowrap;
+    background: #333;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+nav ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li{
+    display: inline-block;
+    width: 25%; 
+    padding: 5px; 
+    
+}
+nav li a{
+    text-decoration: none;
+    color: #ff5500;
+
+}
+.wrapper{
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 20px; 
+    position: relative;
+    z-index: 0; 
+}
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.sections{
+    background: pink;
+    text-align: center;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 1%;
+    width: 29%;
+    height: 250px;
+    margin: 1%;
+}
+.sections::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.content{
+    padding: 10px;
+    background:#f2f2f2;
+    clear: both;
+    margin: 20px 1%;
+    position: relative;
+}
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
+section, aside{
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background: pink;
+}
+.columns{
+    max-height: 500px;
+    overflow: hidden;
+}
+.columns::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer{
+    text-align: center;
+    color: #ff5500;
+}
